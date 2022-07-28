@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Insert title here</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+</head>
+<body>
+ 
+    
+    
+    <style type="text/css">
+    
+  table{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+  
+  body{
+  background-color: blue}
+  
+    
+</style>
+
+    </head>
+    <body>
+        <div class="container">
+            <table width="100%" height="100%" border="0" cellpadding="0" align="center">
+            <tr>
+                <td align="center" valign="middle">
+                <table class="table-bordered" width="350" border="0" cellpadding="3"cellspacing="3" bgcolor="#ffffff">
+        
+			        <form action="#" th:action="@{/login}" th:object="${user}" method="post">
+			  
+			           
+			                  <tr>
+                                    <td height="55px" width="1000px" colspan="2" align="left" valign="middle" bgcolor="#ffffff" class="style2">
+                                        <div align="center">
+                                            <strong>Entrar com uma conta</strong>
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+
+			            <tr>
+			                <td>Nome de usuário</td>
+			                <td>
+				             
+				                <input type="text" th:field="*{username}" class="form-control" />
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>Senha</td>
+			                <td><input type="password" th:field="*{password}" class="form-control" /></td>
+			            </tr>
+			            <tr>
+			            <td colspan="2"><button type="submit" class="btn btn-info" align="right">Login</button> </td>
+			            </tr>
+			        
+			    </form>
+       </table>  
+         </td>   
+         </tr>  
+      </table> 
+      
+      <h1 background-color: "#fff">No momento, nosso sistema de cadastro de usuários está com problemas. Utilize o nome de usuário "institutoproa" e a senha "proa2022".</h1>
+     </div>  
+
+</body>
+</html>

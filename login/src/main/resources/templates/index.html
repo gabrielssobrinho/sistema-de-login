@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+<h1>Bem-vindo ao login</h1>
+   <form th:action="@{/logout}" method="post">
+        <input type="submit" class="btn btn-info" value="Entrar" />
+        <style type="text/css">
+        body{
+        background-color: #F0F0F0;}
+        h1{
+        position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+  input{
+        position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;}
+        </style>
+</body>
+</html>
